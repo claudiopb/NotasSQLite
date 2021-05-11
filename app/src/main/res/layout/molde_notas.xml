@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@color/beigeColorDark"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:background="@drawable/background_notas"
+        android:layout_margin="4pt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textViewTitulo"
+            android:text="Título"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textViewContenido"
+            android:text="Contenido"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
+            <ImageView
+                android:id="@+id/imageViewEditar"
+                app:srcCompat="@drawable/ic_edit"
+                android:layout_width="60dp"
+                android:layout_height="30dp"
+                tools:ignore="VectorDrawableCompat" />
+            <ImageView
+                android:id="@+id/imageViewBorrar"
+                app:srcCompat="@drawable/ic_delete"
+                android:layout_width="60dp"
+                android:layout_height="30dp"
+                tools:ignore="VectorDrawableCompat" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

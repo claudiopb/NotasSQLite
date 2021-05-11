@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".AddActivity">
+
+    <EditText
+        android:id="@+id/editTextTitulo"
+        android:layout_width="314dp"
+        android:layout_height="46dp"
+        android:ems="10"
+        android:hint="Titulo de la Nota"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.102" />
+
+    <EditText
+        android:id="@+id/editTextDescripcion"
+        android:layout_width="337dp"
+        android:layout_height="248dp"
+        android:ems="10"
+        android:hint="Descripción"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTitulo"
+        app:layout_constraintVertical_bias="0.15" />
+
+    <Button
+        android:id="@+id/btnAgragar"
+        android:onClick="btnAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_agregar"
+        android:drawableLeft="@drawable/ic_add"
+        android:text="Agregar"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextDescripcion"
+        app:layout_constraintVertical_bias="0.628" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">NotasSQLite</string>
+    <string name="submit">Agregar</string>
+</resources>
